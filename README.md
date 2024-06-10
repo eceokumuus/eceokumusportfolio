@@ -1,4 +1,4 @@
-[![IMAGE](https://github.com/eceokumuus/todo/blob/master/todos.PNG)](link) 
+[![IMAGE](https://github.com/eceokumuus/my_portfolio/blob/master/public/website.png)](link) 
 
 ## What you will learn
 
