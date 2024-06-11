@@ -3,9 +3,9 @@
 import Image from "next/image";
 import React, { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { BsArrowRight, BsSendSlash , BsSendPlus, BsFillSendCheckFill, BsLinkedin, BsSend, BsSendCheck, BsSendCheckFill, BsSendX } from "react-icons/bs";
-import { HiDownload , HiOutlineMailOpen, HiOutlineMail} from "react-icons/hi";
+//import Link from "next/link";
+import { BsLinkedin } from "react-icons/bs";
+import { HiDownload, HiOutlineMail } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
@@ -49,11 +49,11 @@ export default function Intro() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "tween",
-              duration: 0.2,
+              duration: 1,
             }}
           >
             <Image
-              src="/profile2.jpg"
+              src="/profile.jpg"
               alt="Ece portrait"
               width="192"
               height="192"
@@ -70,11 +70,17 @@ export default function Intro() {
             transition={{
               type: "spring",
               stiffness: 125,
-              delay: 0.1,
+              delay: 1,
               duration: 0.7,
             }}
           >
-            👋
+            {/* 👋 */}
+            <Image
+              src="/gif/4.gif"
+              alt="gif"
+              width="40"
+              height="20"
+            />
           </motion.span>
         </div>
       </div>
