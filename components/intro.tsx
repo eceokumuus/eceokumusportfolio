@@ -11,12 +11,8 @@ import { FaInstagram } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
-export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-
+const useTypingAnimation = (fullText: string, speed: number) => {
   const [displayedText, setDisplayedText] = useState('');
-  const fullText = "Hello, I'm Ece Okumuş.";
 
   useEffect(() => {
     let index = 0;
@@ -26,9 +22,19 @@ export default function Intro() {
       if (index === fullText.length) {
         clearInterval(interval);
       }
-    }, 100); // Her harfi 100ms'de bir göster
+    }, speed); 
     return () => clearInterval(interval);
-  }, []);
+  }, [fullText, speed]);
+
+  return displayedText;
+};
+
+export default function Intro() {
+  const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
+  const fullText = "Hello, I'm Ece Okumuş.";
+  const displayedText = useTypingAnimation(fullText, 100);
 
   return (
     <section
@@ -78,10 +84,16 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        
-        <span className="font-bold">{displayedText}</span>
-        <br/>
-         I'm a{" "}
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="font-bold"
+        >
+          {displayedText}
+        </motion.span>
+        <br />
+        I'm a{" "}
         <span className="font-bold">computer engineer</span> with{" "}
         <span className="font-bold">5 years</span> of experience. I enjoy
         building <span className="italic">websites & mobile applications</span>. My focus is{" "}

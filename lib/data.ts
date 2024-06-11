@@ -55,7 +55,7 @@ export const experiencesData = [
     location: "Ankara/ Türkiye",
     description:
       "I attended a 6-month fullstack software course. My stack includes C#, Bootstrap, Html, Css ",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(LuGraduationCap),
     date: "2019-2020",
   },
   {
@@ -63,7 +63,7 @@ export const experiencesData = [
     location: "Ankara/ Türkiye",
     description:
       "I got my first job. I used technologies such as PHP, Bootstrap, Html, Css. ",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: "2020-2021",
   },
   {
@@ -71,7 +71,7 @@ export const experiencesData = [
     location: "Ankara/ Türkiye",
     description:
       "In this work experience, I used technologies such as react, react native, nextjs.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: "2021-2022",
   },
   {
@@ -79,7 +79,7 @@ export const experiencesData = [
     location: "Ankara/ Türkiye",
     description:
       "I have been developing websites and mobile applications as a freelancer since 2022.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: "2022-continue",
   },
 ] as const;
