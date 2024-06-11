@@ -4,6 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import ilgilisineImg from "@/public/ilgilisine.svg";
 import hotelneredeImg from "@/public/hotelnerede.jpg";
+import joindoImg from "@/public/joindo.png";
 
 export const links = [
   {
@@ -85,6 +86,13 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "JoinDo",
+    description:
+      "I coded it in accordance with the design of the website of the Joindo application.",
+    tags: ["React", "Next.js", "Tailwind", "Framer"],
+    imageUrl: joindoImg,
+  },
+  {
     title: "İlgilisine(Mobile application)",
     description:
       "I worked as a frontend developer in this mobile application project. You can download the application from Google Play",
@@ -98,13 +106,7 @@ export const projectsData = [
     tags: ["Javascript", "Bootstrapp", "Html", "Css"],
     imageUrl: hotelneredeImg,
   },
-  // {
-  //   title: "Word Analytics",
-  //   description:
-  //     "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-  //   tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-  //   imageUrl: wordanalyticsImg,
-  // },
+  
 ] as const;
 
 export const skillsData = [

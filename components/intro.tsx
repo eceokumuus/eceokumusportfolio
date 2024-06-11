@@ -76,10 +76,10 @@ export default function Intro() {
           >
             {/* 👋 */}
             <Image
-              src="/gif/4.gif"
+              src="/gif/6.gif"
               alt="gif"
-              width="40"
-              height="20"
+              width="30"
+              height="30"
             />
           </motion.span>
         </div>
