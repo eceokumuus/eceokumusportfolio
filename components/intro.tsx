@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -111,7 +112,15 @@ export default function Intro() {
           href="https://github.com/eceokumuus"
           target="_blank"
         >
-          <FaGithubSquare />
+          <FaGithub />
+        </a>
+
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://www.instagram.com/ecetravelphotos/"
+          target="_blank"
+        >
+          <FaInstagram />
         </a>
       </motion.div>
     </section>
