@@ -4,6 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import ilgilisineImg from "@/public/ilgilisine.svg";
 import hotelneredeImg from "@/public/hotelnerede.jpg";
+import hotelneredeappImg from "@/public/hotelnerede_app.svg";
 import joindoImg from "@/public/joindo.png";
 
 export const links = [
@@ -93,10 +94,10 @@ export const projectsData = [
     imageUrl: joindoImg,
   },
   {
-    title: "İlgilisine(Mobile application)",
+    title: "İlgilisine Application",
     description:
       "I worked as a frontend developer in this mobile application project. You can download the application from Google Play",
-    tags: ["React", "Expo", "MongoDB"],
+    tags: ["React Native", "Expo", "MongoDB"],
     imageUrl: ilgilisineImg,
   },
   {
@@ -105,6 +106,13 @@ export const projectsData = [
       "As a freelancer, I make all the frontend developments and admin panel of hotelnerede.com using JS, Ajax, html css, bootstrapp technologies.",
     tags: ["Javascript", "Bootstrapp", "Html", "Css"],
     imageUrl: hotelneredeImg,
+  },
+  {
+    title: "Hotel Nerede Application",
+    description:
+      "As a freelancer, I make all the frontend developments and admin panel of hotelnerede.com using JS, Ajax, html css, bootstrapp technologies.",
+    tags: ["React Native", "Expo",],
+    imageUrl: hotelneredeappImg,
   },
   
 ] as const;

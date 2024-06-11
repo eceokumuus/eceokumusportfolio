@@ -1,5 +1,8 @@
 [![IMAGE](https://github.com/eceokumuus/my_portfolio/blob/master/public/website.png)](link) 
 
+# çalıştırmak için : 
+npm run dev
+
 ## What you will learn
 
 - Latest Next.js 13 features
