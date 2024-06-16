@@ -1,3 +1,5 @@
+https://eceokumuus.github.io/eceokumusportfolio/
+
 [![IMAGE](https://github.com/eceokumuus/my_portfolio/blob/master/public/website.png)](link) 
 
 # çalıştırmak için : 
