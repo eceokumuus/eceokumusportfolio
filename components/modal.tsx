@@ -22,8 +22,14 @@ export const Modal = ({ isOpen, onClose, title, description, tags, imageUrl }: M
     }
   }, [isOpen]);
 
-  const handleClickOutside = (event) => {
-    if (modalRef.current && !modalRef.current.contains(event.target)) {
+  // const handleClickOutside = (event) => {
+  //   if (modalRef.current && !modalRef.current.contains(event.target)) {
+  //     onClose();
+  //   }
+  // };
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
       onClose();
     }
   };
