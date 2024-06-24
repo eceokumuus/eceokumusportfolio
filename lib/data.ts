@@ -5,7 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import ilgilisineImg from "@/public/ilgilisine.svg";
 import hotelneredeImg from "@/public/hotelnerede.jpg";
 import hotelneredeappImg from "@/public/hotelnerede_app.svg";
-import joindoImg from "@/public/joindo.png";
+import myPortfolio from "@/public/my_portfolio.png";
 
 export const links = [
   {
@@ -87,11 +87,11 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "JoinDo",
+    title: "My Portfolio",
     description:
-      "I coded it in accordance with the design of the website of the Joindo application.",
+      "I coded this website using Nextjs, tailwind css , framer",
     tags: ["React", "Next.js", "Tailwind", "Framer"],
-    imageUrl: joindoImg,
+    imageUrl: myPortfolio,
   },
   {
     title: "İlgilisine Application",
