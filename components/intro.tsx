@@ -10,6 +10,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import profileImg from "@/public/profile.jpg";
+import gifEarth from "@/public/gif/6.gif";
 
 const useTypingAnimation = (fullText: string, speed: number) => {
   const [displayedText, setDisplayedText] = useState('');
@@ -53,7 +55,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/profile.jpg"
+              src={profileImg}
               alt="Ece portrait"
               width="192"
               height="192"
@@ -76,7 +78,7 @@ export default function Intro() {
           >
             {/* 👋 */}
             <Image
-              src="/gif/6.gif"
+              src={gifEarth}
               alt="gif"
               width="30"
               height="30"
