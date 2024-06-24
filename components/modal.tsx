@@ -12,7 +12,8 @@ interface ModalProps {
 }
 
 export const Modal = ({ isOpen, onClose, title, description, tags, imageUrl }: ModalProps) => {
-  const modalRef = useRef(null);
+  // const modalRef = useRef(null);
+  const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (isOpen) {
