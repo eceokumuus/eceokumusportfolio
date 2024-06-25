@@ -12,6 +12,7 @@ interface ModalProps {
 }
 
 export const Modal = ({ isOpen, onClose, title, description, tags, imageUrl }: ModalProps) => {
+  // const modalRef = useRef(null);
   const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -22,7 +23,13 @@ export const Modal = ({ isOpen, onClose, title, description, tags, imageUrl }: M
     }
   }, [isOpen]);
 
-  const handleClickOutside = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+  // const handleClickOutside = (event) => {
+  //   if (modalRef.current && !modalRef.current.contains(event.target)) {
+  //     onClose();
+  //   }
+  // };
+
+  const handleClickOutside = (event: MouseEvent) => {
     if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
       onClose();
     }
@@ -58,7 +65,7 @@ export const Modal = ({ isOpen, onClose, title, description, tags, imageUrl }: M
           <p className="mb-4">{description}</p>
           <ul className="flex flex-wrap mb-4 gap-2">
             {tags.map((tag, index) => (
-              <li key={index} className="bg-black dark:bg-white px-3 py-1 text-white dark:text-black rounded-full text-sm">{tag}</li>
+              <li key={index} className="bg-black dark:bg-white  px-3 py-1 text-white dark:text-black rounded-full text-sm">{tag}</li>
             ))}
           </ul>
         </div>
