@@ -13,6 +13,8 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  linkImage,
+  link,
 }: ProjectProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -29,6 +31,11 @@ export default function Project({
 
   const closeModal = () => {
     setIsModalOpen(false);
+  };
+
+  const handleImageClick = (url: string, event: React.MouseEvent) => {
+    event.stopPropagation(); // Tıklama olayının yukarıya yayılmasını durdur
+    window.open(url, '_blank');
   };
 
   return (
@@ -48,6 +55,7 @@ export default function Project({
             <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
               {description}
             </p>
+
             <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
               {tags.map((tag, index) => (
                 <li
@@ -58,6 +66,18 @@ export default function Project({
                 </li>
               ))}
             </ul>
+
+            {linkImage && (
+              <div className="max-h-8 cursor-pointer flex items-center justify-center mt-4">
+                <Image
+                  src={linkImage}
+                  alt="Google"
+                  quality={95}
+                  onClick={(e) => handleImageClick(link, e)}
+                  className="max-h-8 w-auto"
+                />
+              </div>
+            )}
           </div>
 
           <Image
@@ -75,8 +95,8 @@ export default function Project({
             group-even:group-hover:translate-y-3
             group-even:group-hover:rotate-2
 
-            group-even:right-[initial] group-even:-left-40"
-            />
+            group-even:right-[initial] group-even:-left-40 cursor-pointer"
+          />
         </section>
       </motion.div>
 

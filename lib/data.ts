@@ -5,6 +5,7 @@ import ilgilisineImg from "@/public/ilgilisine.svg";
 import hotelneredeImg from "@/public/hotelnerede.jpg";
 import hotelneredeappImg from "@/public/hotelnerede_app.svg";
 import myPortfolio from "@/public/my_portfolio.png";
+import imageGoogle from "@/public/google.svg";
 
 export const links = [
   {
@@ -91,6 +92,8 @@ export const projectsData = [
       "I coded this website using Nextjs, tailwind css , framer",
     tags: ["React", "Next.js", "Tailwind", "Framer"],
     imageUrl: myPortfolio,
+    linkImage: "",
+    link: "",
   },
   {
     title: "İlgilisine Application",
@@ -98,6 +101,8 @@ export const projectsData = [
       "I worked as a frontend developer in this mobile application project. You can download the application from Google Play",
     tags: ["React Native", "Expo", "MongoDB"],
     imageUrl: ilgilisineImg,
+    linkImage: imageGoogle,
+    link: "https://play.google.com/store/apps/details?id=com.eceokumus.ilgilisine",
   },
   {
     title: "Hotel Nerede",
@@ -105,6 +110,8 @@ export const projectsData = [
       "As a freelancer, I make all the frontend developments and admin panel of hotelnerede.com using JS, Ajax, html css, bootstrapp technologies.",
     tags: ["Javascript", "Bootstrapp", "Html", "Css"],
     imageUrl: hotelneredeImg,
+    linkImage: "",
+    link: "",
   },
   {
     title: "Hotel Nerede Application",
@@ -112,6 +119,8 @@ export const projectsData = [
       "As a freelancer, I make all the frontend developments and admin panel of hotelnerede.com using JS, Ajax, html css, bootstrapp technologies.",
     tags: ["React Native", "Expo",],
     imageUrl: hotelneredeappImg,
+    linkImage: "",
+    link: "",
   },
   
 ] as const;
